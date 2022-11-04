@@ -1,0 +1,69 @@
+.content {
+    border: 1px dashed green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.christmasContent {
+    background-color: green;
+    width: 500px;
+    height: 200px;
+    border: 10px dotted red;
+    margin: 20px 0;
+}
+
+.christmas {
+    font-family: 'Mountains of Christmas', cursive;
+    color: red;
+    padding: 30px;
+    margin-top: 0;
+}
+
+.christmasIcon {
+    background-image: url('../../../public/christmas.png');
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    left: 200px;
+}
+
+.christmasInput {
+    font-family: 'Mountains of Christmas', cursive;
+    color: green;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.snowContent {
+    background-color: rgb(73, 167, 240);
+    width: 500px;
+    height: 200px;
+    border: 10px dotted white;
+    margin: 20px 0;
+}
+
+.snow {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    padding: 30px;
+    margin-top: 0;
+}
+
+.snowIcon {
+    background-image: url('../../../public/snowman.png');
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    left: 200px;
+}
+
+.snowInput {
+    font-family: 'Pacifico', cursive;
+    color: rgb(73, 167, 240);
+    font-size: 20px;
+}

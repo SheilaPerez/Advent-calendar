@@ -1,0 +1,49 @@
+.home {
+    background-image: url(../../../public/casa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+
+}
+
+.tree {
+    background-image: url(../../../public/arbol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+}
+.lightthree {
+    background-image: url(../../../public/luces3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+}
+.lighttwo {
+    background-image: url(../../../public/luces2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+}
+
+.lightone {
+    background-image: url(../../../public/luces1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+}
+
+.imagesContent {
+    display: flex;
+    margin: 20px;
+    margin: 20px 120px;
+    justify-content: space-evenly;
+}
+
+.decorationContent {
+    display: flex;
+}

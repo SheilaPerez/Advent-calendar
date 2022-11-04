@@ -1,0 +1,32 @@
+.lists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.niceList {
+    border: 5px dotted green;
+    width: 200px;
+    height: 100%;
+}
+
+.naugthyList {
+    border: 5px dotted red;
+    width: 200px;
+    height: 100%;
+}
+
+.nice {
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+}
+
+.naugthy {
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,24 @@
+.content {
+    border: 1px dotted green;
+    margin: 20px 0;
+}
+
+.inputContent {
+    margin-top: 20px;
+}
+
+.label {
+    font-family: 'Mountains of Christmas', cursive;
+    color: green;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.labelChecked {
+    font-family: 'Mountains of Christmas', cursive;
+    color: red;
+    font-size: 22px;
+    margin-left: 10px;
+    text-decoration:line-through;
+}

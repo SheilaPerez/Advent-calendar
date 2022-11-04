@@ -1,0 +1,53 @@
+.content {
+    border: 3px dotted green;
+}
+
+.elf {
+    background-image: url('../../../public/elfo.png');
+    height: 90px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cookie {
+    background-image: url('../../../public/jengibre.png');
+    height: 90px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.snowman {
+    background-image: url('../../../public/nieve.png');
+    height: 90px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.iconsContent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.iconAnimtaion {
+    animation: icons 2s infinite;
+    position: relative;
+}
+
+@keyframes icons {
+    0% {
+        rotate: 0deg;
+      }
+    50% {
+        rotate: 30deg;   
+    }
+    100% {
+        rotate: -30deg;      
+    }
+ }

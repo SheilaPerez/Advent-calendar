@@ -12,8 +12,12 @@
     "@types/react-dom": "^18.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
+    "react-uuid": "^2.0.0",
     "typescript": "^4.8.4",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

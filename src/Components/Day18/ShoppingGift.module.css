@@ -1,0 +1,16 @@
+.content {
+    background-color: rgb(225, 121, 121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listContent {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+}
+
+.icon {
+    width: 20px;
+}

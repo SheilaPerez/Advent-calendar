@@ -1,0 +1,25 @@
+.clickedContent {
+    background-color: rgb(255, 107, 107);
+    width: 500px;
+    height: 200px;
+    border: 9px dotted rgb(85, 248, 85);
+}
+
+.content {
+    background-color: black;
+    width: 500px;
+    height: 200px;
+    border: 9px solid rgb(237, 174, 85)
+}
+
+.clickedStyle {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 30px;
+    color: white;
+}
