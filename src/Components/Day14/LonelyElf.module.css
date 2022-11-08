@@ -4,5 +4,29 @@
 }
 
 .content {
-    background-color: rgb(208, 180, 234);
+    background-color: white;
+    padding: 10px;
+    border: 5px dotted #D58BDD;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #E26868;
+    margin-bottom: 0;
+}
+
+.duplicate {
+    background-color: #D58BDD;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.lonely {
+    background-color: #FF99D7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
 }

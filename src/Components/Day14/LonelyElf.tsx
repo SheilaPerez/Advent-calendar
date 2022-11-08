@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { BsHandIndex } from 'react-icons/bs';
 import styles from './LonelyElf.module.css';
 
 const LonelyElf = () => {
@@ -15,18 +14,18 @@ const LonelyElf = () => {
     }
 
     return (
-        <div className={styles.content}>
-            <h1>Lonely Elf</h1>
-            <div>
-                {elfs.map((elf) => {
-                    return (
-                        <img src={elf} className={styles.elf}></img>
-                    )
-                })}
+            <div className={styles.content}>
+                <h1 className={styles.title}>Lonely Elf</h1>
+                <div>
+                    {elfs.map((elf) => {
+                        return (
+                            <img src={elf} className={styles.elf}></img>
+                        )
+                    })}
+                </div>
+                <button type="button" className={styles.duplicate} onClick={handleClickDuplicate}>Duplicate elf!</button>
+                <button type="button" className={styles.lonely} onClick={handleClickLonely}>Lonely again...</button>
             </div>
-            <button type="button" onClick={handleClickDuplicate}>Duplicate elf!</button>
-            <button type="button" onClick={handleClickLonely}>Lonely again...</button>
-        </div>
     )
 };
 

@@ -21,19 +21,19 @@ const GuestList = () => {
 
     return (
         <div className={styles.content}>
-            <h1>Christmas guest list</h1>
+            <h1 className={styles.title}>Christmas guest list</h1>
             <div className={styles.guestListContent}>
                 {guestsList.map((guest) => {
                     return (
-                        <ul>
-                            <li>{guest.name}</li>
-                        </ul>
+                        <p className={styles.names}>{guest.name}</p>
                     )
                 })}
             </div>
-            <p>New guest:</p>
-            <input type="text" value={guest} onChange={(e) => handleChangeAddGuest(e)}></input>
-            <button type="button" onClick={handleClickAddGuest}>Add 'em</button>
+            <div className={styles.addNameContent}>
+                <p className={styles.newGuest}>New guest:</p>
+                <input type="text" value={guest} onChange={(e) => handleChangeAddGuest(e)}></input>
+                <button type="button" className={styles.button} onClick={handleClickAddGuest}>Add 'em</button>
+            </div>   
         </div>
     )
 };

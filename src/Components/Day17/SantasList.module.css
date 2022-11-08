@@ -1,3 +1,9 @@
+.content {
+    border: 5px dotted #F0CF85;
+    background-color: white;
+    padding: 10px;
+}
+
 .lists {
     display: flex;
     justify-content: space-evenly;
@@ -7,26 +13,70 @@
     border: 5px dotted green;
     width: 200px;
     height: 100%;
+    border-radius: 10px;
+    margin: 8px;
 }
 
 .naugthyList {
     border: 5px dotted red;
     width: 200px;
     height: 100%;
+    border-radius: 10px;
+    margin: 8px;
+
 }
 
 .nice {
     border-bottom: 1px solid green;
     padding-bottom: 5px;
+    font-family: 'Pacifico', cursive;
+    color: #A4D4AE;
 }
 
 .naugthy {
     border-bottom: 1px solid red;
     padding-bottom: 5px;
+    font-family: 'Pacifico', cursive;
+    color: #F35C6E;
 }
 
 .display {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #F0CF85;
+}
+
+.createBtn {
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    background-color: #57abe7;
+    color: #f6e5bf;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.changeListBtn {
+    border: none;
+    border-radius: 10px;
+    color: #57abe7;
+    background-color: #F0CF85;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.niceInput {
+    font-family: 'Pacifico', cursive;
+    color: #A4D4AE;
+}
+
+.naughtyInput {
+    font-family: 'Pacifico', cursive;
+    color: #F35C6E;
 }

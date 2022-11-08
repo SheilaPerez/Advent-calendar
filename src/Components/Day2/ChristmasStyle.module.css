@@ -1,12 +1,14 @@
 .content {
-    border: 1px dashed green;
+    border: 5px dotted #FF74B1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    padding: 10px;
 }
 
 .christmasContent {
-    background-color: green;
+    background-color: rgb(149, 235, 149);
     width: 500px;
     height: 200px;
     border: 10px dotted red;
@@ -66,4 +68,11 @@
     font-family: 'Pacifico', cursive;
     color: rgb(73, 167, 240);
     font-size: 20px;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #FF74B1;
+    font-size: 30px;
+    font-weight: bold;
 }

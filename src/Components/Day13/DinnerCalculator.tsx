@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { getRandomNum } from '../../helpers/getRandomNum';
 import styles from './DinnerCalculator.module.css';
 
 const DinnerCalculator = () => {
-    const meals = ["turkey", "goose", "chicken"]
-    const vegetarianMeals = ["nut roast", "Squash & chestnut crackers", "Mini nut roasts with candied carrots"]
+    const meals = ["Turkey", "Goose", "Chicken"]
+    const vegetarianMeals = ["Nut roast", "Squash & chestnut crackers", "Mini nut roasts with candied carrots"]
     const [checkedVegetarian, setCheckedVegetarian] = useState<Boolean>();
     const [mealSelected, setMealSelected] = useState<string>("");
 
@@ -12,7 +13,7 @@ const DinnerCalculator = () => {
     }
 
     const handleClickCalculate = () => {
-        let numRandom = getRandomIntInclusive(0, 3);
+        let numRandom = getRandomNum(0, 3);
         if (checkedVegetarian) {
             const foundMeal = vegetarianMeals.filter((meal: string, index: number) => {
                 return numRandom === index;
@@ -26,25 +27,19 @@ const DinnerCalculator = () => {
         }
     }
 
-    function getRandomIntInclusive(min: number, max: number) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-    
     return (
-        <div>
-            <h1>Christmas dinner</h1>
-            <div>
-                <h3>Your ideal Christmas dinner is...</h3>
-                <p>{mealSelected}</p>
+            <div className={styles.content}>
+                <h1 className={styles.title}>Christmas dinner</h1>
+                <div>
+                    <h3 className={styles.subtitle}>Your ideal Christmas dinner is...</h3>
+                    <p className={styles.answer}>{mealSelected}</p>
+                </div>
+                <div>
+                    <p className={styles.question}>Any vegetarian?</p>
+                    <input type="checkbox" onChange={(e) => handleChangeVegetarian(e)}></input>
+                </div>
+                <button className={styles.button} type="button" onClick={handleClickCalculate}>Calculate</button>
             </div>
-            <div>
-                <p>Any vegetarian?</p>
-                <input type="checkbox" onChange={(e) => handleChangeVegetarian(e)}></input>
-            </div>
-            <button type="button" onClick={handleClickCalculate}>Calculate</button>
-        </div>
     )
 };
 

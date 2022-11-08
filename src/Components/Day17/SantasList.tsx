@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import styles from './SantasList.module.css';
-import { BiRightArrowAlt, BiLeftArrowAlt } from "react-icons/bi";
-
-interface List {
+import { BiRightArrowAlt, BiLeftArrowAlt } from "react-icons/bi";interface List {
     name: string;
     demeanorChecked: string;
     id: number;
@@ -77,45 +75,45 @@ const SantasList = () => {
     }
 
     return (
-        <div>
-            <h1>Santa's List</h1>
-            <div className={styles.lists}>
-                <div className={styles.niceList}>
-                    <h3 className={styles.nice}>Nice</h3>
-                    {namesList.map((name) => {
-                        if (buttonClicked && name.demeanorChecked === "nice") {
-                            return (
-                                <div className={styles.display}>
-                                    <p>{name.name}</p>
-                                    <button type="button" onClick={() => handleClickchangeList(name.id)}><BiRightArrowAlt/></button>
-                                </div>
-                            )
-                        }
-                    })}
+            <div className={styles.content}>
+                <h1 className={styles.title}>Santa's List</h1>
+                <div className={styles.lists}>
+                    <div className={styles.niceList}>
+                        <h3 className={styles.nice}>Nice</h3>
+                        {namesList.map((name) => {
+                            if (buttonClicked && name.demeanorChecked === "nice") {
+                                return (
+                                    <div className={styles.display}>
+                                        <p>{name.name}</p>
+                                        <button type="button" className={styles.changeListBtn} onClick={() => handleClickchangeList(name.id)}><BiRightArrowAlt/></button>
+                                    </div>
+                                )
+                            }
+                        })}
+                    </div>
+                    <div className={styles.naugthyList}>
+                        <h3 className={styles.naugthy}>Naughty</h3>
+                        {namesList.map((name) => {
+                            if (buttonClicked && name.demeanorChecked === "naughty") {
+                                return (
+                                    <div className={styles.display}>
+                                        <button type="button" className={styles.changeListBtn} onClick={() => handleClickchangeList(name.id)}><BiLeftArrowAlt/></button>
+                                        <p>{name.name}</p>
+                                    </div>
+                                )
+                            }
+                        })}
+                    </div>
                 </div>
-                <div className={styles.naugthyList}>
-                    <h3 className={styles.naugthy}>Naughty</h3>
-                    {namesList.map((name) => {
-                        if (buttonClicked && name.demeanorChecked === "naughty") {
-                            return (
-                                <div className={styles.display}>
-                                    <button type="button" onClick={() => handleClickchangeList(name.id)}><BiLeftArrowAlt/></button>
-                                    <p>{name.name}</p>
-                                </div>
-                            )
-                        }
-                    })}
-                </div>
+                <button type="button" className={styles.createBtn}  onClick={() => setButtonClicked(true)}>Create list</button>
+                <p>Do you want enter a new name?</p>
+                <input type="text" placeholder='name' value={name} onChange={(e) => handleChangeAddName(e)}></input>
+                <input type="radio" name="demeanor" value="nice"  onChange={(e) => {handleChangeDemmeanor(e)}}></input>
+                <label className={styles.niceInput}>nice</label>
+                <input type="radio" name="demeanor" value="naughty" onChange={(e) => {handleChangeDemmeanor(e)}}></input>
+                <label className={styles.naughtyInput} >naughty</label>
+                <button type="button" className={styles.createBtn} onClick={handleClickAdd}>Add</button>
             </div>
-            <button type="button" onClick={() => setButtonClicked(true)}>Create list</button>
-            <p>Do you want enter a new name?</p>
-            <input type="text" placeholder='name' value={name} onChange={(e) => handleChangeAddName(e)}></input>
-            <input type="radio" name="demeanor" value="nice" onChange={(e) => {handleChangeDemmeanor(e)}}></input>
-            <label>nice</label>
-            <input type="radio" name="demeanor" value="naughty" onChange={(e) => {handleChangeDemmeanor(e)}}></input>
-            <label>naughty</label>
-            <button type="button" onClick={handleClickAdd}>Add</button>
-        </div>
     )
 };
 

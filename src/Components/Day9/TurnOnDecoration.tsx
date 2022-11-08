@@ -8,25 +8,28 @@ const TurnOnDecoration = () => {
         setChecked(e.target.checked);
     }
 
-    return (
-        <div>
-            <p>Turn on Christmas decoration!</p>
-            <div>
-                <input type="checkbox" onChange={(e) => handleClickCheckbox(e)}></input>   
-            </div>
-            <div className={styles.imagesContent}>
-                {checked && <div className={styles.decorationContent}>
-                                <div className={styles.lightone}></div>
-                                <div className={styles.tree}></div>
-                            </div>}
-                <div className={styles.home}></div>
-                {checked && <div className={styles.decorationContent}>
-                                <div className={styles.lightthree}></div>
-                                <div className={styles.lighttwo}></div>
-                            </div>}
-            </div>
+    const stopPropagation = (e:any) => {
+        e.stopPropagation();
+    }
 
-        </div>
+    return (
+            <div className={styles.content}>
+                <p className={styles.title}>Turn on Christmas decoration!</p>
+                <div>
+                    <input type="checkbox" onChange={(e) => handleClickCheckbox(e)}></input>   
+                </div>
+                <div className={styles.imagesContent}>
+                    {checked && <div className={styles.decorationContent}>
+                                    <div className={styles.lightone}></div>
+                                    <div className={styles.tree}></div>
+                                </div>}
+                    <div className={styles.home}></div>
+                    {checked && <div className={styles.decorationContent}>
+                                    <div className={styles.lightthree}></div>
+                                    <div className={styles.lighttwo}></div>
+                                </div>}
+                </div>
+            </div>
     )
 }
 

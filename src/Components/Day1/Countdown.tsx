@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
+import styles from './Countdown.module.css';
 
 const Countdown = () => {
     const now = new Date();
@@ -15,12 +16,12 @@ const Countdown = () => {
         const minutes = Math.floor(seconds / 60);
         const hours = Math.floor(minutes / 60);
         setDays(Math.floor(hours / 24));
-        console.log('time', days)
     }
+    
     return (
-        <div>
-            <p>Christmas CountDown</p>
-            {days > 0 && <p>{days} days left!</p>}
+        <div className={styles.content}>
+            <p className={styles.title}>Christmas CountDown</p>
+            {days > 0 && <p className={styles.daysLeft}>{days} days left!</p>}
         </div>
     )
 };

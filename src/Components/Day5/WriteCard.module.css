@@ -1,11 +1,10 @@
 .content {
-    background-color: rgb(206, 250, 139);
-    width: 500px;
-    height: 200px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 10px;
+    border: 5px dotted #628E90;
 }
 
 .letterContent {
@@ -15,4 +14,13 @@
     border-radius: 10px;
     font-family: 'Caveat', cursive;
     font-size: 30px;
+}
+
+.writeBtn {
+    border: none;
+    padding: 10px;
+    background-color: #628E90;
+    border-radius: 10px;
+    color: pink;
+    cursor: pointer;
 }

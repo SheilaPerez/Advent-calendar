@@ -1,0 +1,57 @@
+.content {
+    background-color: #A1C298;
+    padding: 50px;
+    border: 10px dotted #E64848;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #FBF2CF;
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.window {
+    border: 2px solid #82A284;
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #446A46;
+    margin: 17px;
+    cursor: pointer;
+}
+
+.windowsContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.num {
+    color: #E64848;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 35px;
+}
+
+.image {
+    background-image: url('../../../public/ciervo.png');
+    background-repeat: none;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 36px 0px 0px 23px;
+    animation: icons 2s infinite;
+    position: relative;
+}
+
+@keyframes icons {
+    0% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 30deg;   
+    }
+    100% {
+        rotate: -30deg;      
+    }
+ }

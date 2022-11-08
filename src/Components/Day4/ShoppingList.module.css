@@ -1,8 +1,8 @@
 .content {
-    border: 1px dotted green;
-    margin: 20px 0;
+    border: 5px dotted #F7EC09;
+    padding: 10px;
+    background-color: white;
 }
-
 .inputContent {
     margin-top: 20px;
 }
@@ -21,4 +21,18 @@
     font-size: 22px;
     margin-left: 10px;
     text-decoration:line-through;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #F7EC09;
+}
+
+.addBtn {
+    background-color: #F7EC09;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
 }

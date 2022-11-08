@@ -5,7 +5,8 @@ interface Shooping {
     icon: string;
     check: boolean;
 }
-const ShoppingGift = () => {
+
+const ShoppingGift =() => {
     const [list, setList] = useState<Shooping[]>([{
         name: "Candles",
         icon: '',
@@ -47,8 +48,9 @@ const ShoppingGift = () => {
     }
 
     return (
-        <div className={styles.content}>
-            <h1>Christmas shopping list</h1>
+        <div>
+            <div className={styles.content}>
+            <h1 className={styles.title}>Christmas shopping list</h1>
             <div className={styles.listContent}>
                 {list.map((item, index) => {
                     return (
@@ -61,7 +63,7 @@ const ShoppingGift = () => {
                                 </div>
                                 :
                                 <div>
-                                    <input type="checkbox" value={item.name} onChange={(e) => handleChangeChecked(e, index)}></input>
+                                    <input type="checkbox" value={item.name} className={styles.input} onChange={(e) => handleChangeChecked(e, index)}></input>
                                     <label>{item.name}</label>
                                 </div>
                             }
@@ -69,6 +71,8 @@ const ShoppingGift = () => {
                     )
                 })}
             </div>
+        </div>
+        
             
         </div>
     )

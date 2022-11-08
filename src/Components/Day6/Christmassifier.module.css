@@ -3,23 +3,41 @@
     width: 500px;
     height: 200px;
     border: 9px dotted rgb(85, 248, 85);
-}
-
-.content {
-    background-color: black;
-    width: 500px;
-    height: 200px;
-    border: 9px solid rgb(237, 174, 85)
+    background-image: url('../../../public/arbol.png');
+    background-size: 50px;
+    background-repeat: repeat-x;
 }
 
 .clickedStyle {
     font-family: 'Mountains of Christmas', cursive;
     font-size: 30px;
-    color: green;
+    color: #38E54D;
     font-weight: bold;
+    position: relative;
+    top: 110px;
 }
 
 .text {
     font-size: 30px;
+}
+
+.modal {
+    background-color: white;
+    padding: 10px;
+}
+
+.clicked {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #A1DE93;
     color: white;
+}
+
+.noClicked {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
 }

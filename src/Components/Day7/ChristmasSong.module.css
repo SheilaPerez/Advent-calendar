@@ -1,0 +1,31 @@
+.radio {
+    background-color: #EDEDED;
+    border: none;
+    font-size: 20px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.radio:focus {
+    background-color: #ECB390;
+}
+
+.image {
+    background-image: url('../../../public/elfo.png');
+    background-repeat: none;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+}
+.content {
+    border: 5px dotted #FD5E53;
+    background-color: white;
+    padding: 10px;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #FD5E53;
+}

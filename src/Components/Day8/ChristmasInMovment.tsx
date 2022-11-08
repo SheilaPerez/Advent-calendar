@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './ChristmasInMovment.module.css';
+import { FaPlay, FaPause } from "react-icons/fa";
 
 const ChristmasInMovment = () => {
     const [play, setPlay] = useState<Boolean>(false);
@@ -22,7 +23,7 @@ const ChristmasInMovment = () => {
 
     return (
         <div className={styles.content}>
-            <h1>Jingle Rocks!!</h1>
+            <h1 className={styles.title}>Jingle Rocks!!</h1>
             <audio id="player">
                 <source src="Jingle.mp3" type="audio/mp3" />
             </audio>
@@ -32,8 +33,8 @@ const ChristmasInMovment = () => {
                 <div className={`${styles.snowman} ${play ? `${styles.iconAnimtaion}` : ""}`}></div>
             </div>
             <div>
-                <button type="button" onClick={handlePlay}>Play</button>
-                <button type="button" onClick={handlePause}>Pause</button>
+                <button type="button" className={styles.radio} onClick={handlePlay}><FaPlay color={"#446A46"} /></button>
+                <button type="button" className={styles.radio} onClick={handlePause}><FaPause color={"#E64848"} /></button>
             </div>
         </div>
     )

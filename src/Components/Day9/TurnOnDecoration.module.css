@@ -47,3 +47,16 @@
 .decorationContent {
     display: flex;
 }
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #8D72E1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content {
+    border: 5px dotted #8D72E1;
+    background-color: white;
+    padding: 10px;
+}

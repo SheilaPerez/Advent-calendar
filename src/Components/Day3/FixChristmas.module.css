@@ -1,3 +1,6 @@
+.content {
+    background-color: white;
+}
 
 .title {
     color: red;
@@ -8,3 +11,40 @@
     font-family: 'Mountains of Christmas', cursive;
     color: green;
 }
+
+.fix {
+    border: 5px dotted red;
+    padding: 10px;
+}
+
+.fixed {
+    border: 5px dotted green;
+    padding: 10px;
+}
+
+.fixBtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F35C6E;
+    color: white;
+    cursor: pointer;
+}
+
+.fixBtn:hover {
+    background-color: #77D970;
+}
+
+.fixedBtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #77D970;
+    color: white;
+    cursor: pointer;
+}
+
+.fixedBtn:hover {
+    background-color: #F35C6E;
+}
+

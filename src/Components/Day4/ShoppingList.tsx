@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import  {useState } from 'react';
 import styles from './ShoppingList.module.css';
 import uuid from 'react-uuid';
-
 interface List {
     name: string;
     id: string;
@@ -21,6 +20,7 @@ const ShoppingList = () => {
             id: uuid(),
             check: false
         }])
+        setPresent('');
     };
 
     const handleChangeCheckbox = (e: React.ChangeEvent<HTMLInputElement>, id: string) => {
@@ -35,23 +35,21 @@ const ShoppingList = () => {
     }
 
     return (
-        <div className={styles.content}>
-            <h1>Christmas shopping List</h1>
-            <input type="text" placeholder="presents I need to buy" onChange={(e) => handleChangeInputAdd(e)}></input>
-            <button type="button" onClick={handleClickAdd}>Add a present</button>
-            <div className={styles.inputContent}>
-                {shoppList.map((gift) => {
-                    return(
-                        <div>
-                            <input type="checkbox" value={gift.name} id={gift.id} onChange={(e) => handleChangeCheckbox(e, gift.id)}></input>
-                            <label className={`${gift.check ? styles.labelChecked : styles.label}`}>{gift.name}</label>
-                        </div>
-                    )
-                })}
+            <div className={styles.content}>
+                <h1 className={styles.title}>Christmas shopping List</h1>
+                <input type="text" value={present} placeholder="presents I need to buy" onChange={(e) => handleChangeInputAdd(e)}></input>
+                <button type="button" className={styles.addBtn} onClick={handleClickAdd}>Add a present</button>
+                <div className={styles.inputContent}>
+                    {shoppList.map((gift) => {
+                        return(
+                            <div>
+                                <input type="checkbox" value={gift.name} id={gift.id} onChange={(e) => handleChangeCheckbox(e, gift.id)}></input>
+                                <label className={`${gift.check ? styles.labelChecked : styles.label}`}>{gift.name}</label>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
-            
-            
-        </div>
     )
 }
 

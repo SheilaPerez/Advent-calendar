@@ -1,0 +1,34 @@
+.content {
+    border: 5px dotted #32AFA9;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #32AFA9;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-family: 'Pacifico', cursive;
+
+}
+
+.button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    color: #32AFA9;
+    cursor: pointer;
+}
+
+.time {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+    color: #A4D4AE;
+}

@@ -7,21 +7,23 @@ const FixChristmas = () => {
     const handleClickFix = () => {
         setFixClicked(!fixClicked);
     }
+
+    const stopPropagation = (e:any) => {
+        e.stopPropagation();
+    }
     return (
-        <div>
-            <div>
+            <div className={styles.content}>
                 {fixClicked ?
-                    <div>
+                    <div className={styles.fixed}>
                         <h1 className={styles.titleFixed}>Merry Christmas</h1>
-                        <button type="button" onClick={handleClickFix}>FIXED!</button>
+                        <button type="button" className={styles.fixedBtn} onClick={handleClickFix}>FIXED!</button>
                     </div> :
-                    <div>
+                    <div className={styles.fix}>
                         <h1 className={styles.title}>Merry Christmas</h1>
-                        <button type="button" onClick={handleClickFix}>FIX</button>
+                        <button type="button" className={styles.fixBtn} onClick={handleClickFix}>FIX</button>
                     </div>
                 } 
             </div>
-        </div>
     )
 };
 

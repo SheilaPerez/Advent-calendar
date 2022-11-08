@@ -1,5 +1,6 @@
 import { get } from 'https';
 import { useState } from 'react';
+import { getRandomNum } from '../../helpers/getRandomNum';
 import styles from './ChristmasMovies.module.css';
 
 const ChristmasMovies = () => {
@@ -19,14 +20,8 @@ const ChristmasMovies = () => {
         setgenderSelected(e.target.value)
     }
 
-    function getRandom(min:number, max:number) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-
     const handleClickSelectMovie = () => {
-        let numRandom = getRandom(0, 1);
+        let numRandom = getRandomNum(0, 1);
         if (publicSelected === "adult" && genderSelected === "romance") {
             const foundMovie = adultRomance.filter((movie: string, index: number) => {
                 return numRandom === index;
@@ -57,7 +52,7 @@ const ChristmasMovies = () => {
 
     return (
         <div className={styles.content}>
-            <h1>Christmas movies</h1>
+            <h1 className={styles.title}>Christmas movies</h1>
             <p className={styles.nameMovie}>{movieSelected}</p>
             <select onChange={(e) => handleChangePublic(e)}>
                 <option>Select public</option>
@@ -69,7 +64,7 @@ const ChristmasMovies = () => {
                 <option value="romance">Romance</option>
                 <option value="action">Action</option>
             </select>
-            <button type="button" onClick={handleClickSelectMovie}>Select movie</button>
+            <button type="button" className={styles.button} onClick={handleClickSelectMovie}>Select movie</button>
         </div>
     )
 };

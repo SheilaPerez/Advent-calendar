@@ -1,5 +1,11 @@
 .content {
-    border: 3px dotted green;
+    border: 5px dotted rgb(70, 197, 70);
+    background-color: white;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: rgb(70, 197, 70);
 }
 
 .elf {
@@ -50,4 +56,18 @@
     100% {
         rotate: -30deg;      
     }
- }
+}
+
+.radio {
+    background-color: #EDEDED;
+    border: none;
+    font-size: 20px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.radio:focus {
+    background-color: #ECB390;
+}

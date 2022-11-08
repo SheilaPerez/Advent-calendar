@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { getRandomNum } from "../../helpers/getRandomNum";
 import styles from './WriteCard.module.css';
-
 interface Letter {
     text: string;
 }
@@ -16,29 +16,21 @@ const WriteCard = () => {
     }];
     const [letterSelected, setLetterSelected] = useState<Letter>({text: ''});
 
-    const random = (min: number, max: number) => {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-
     const handleClickWriteCard = () => {
-        let numRandom = random(0, 3);
+        let numRandom = getRandomNum(0, 3);
         const foundLetter = letters.filter((letter: Letter, index: number) => {
             return numRandom === index
         })[0]
-
-        setLetterSelected(foundLetter)
-        
+        setLetterSelected(foundLetter)  
     }
 
     return (
-        <div className={styles.content}>
-            <div className={styles.letterContent}>
-                <p>{letterSelected.text}</p>
-            </div>
-            <button type="button" onClick={handleClickWriteCard}>Write card</button>
-        </div>
+            <div className={styles.content}>
+                <div className={styles.letterContent}>
+                    <p>{letterSelected.text}</p>
+                </div>
+                <button type="button" className={styles.writeBtn} onClick={handleClickWriteCard}>Write card</button>
+            </div>    
     )
 }
 

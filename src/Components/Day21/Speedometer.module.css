@@ -1,0 +1,9 @@
+.content {
+    border: 5px dotted #FF6C00;
+    background-color: white;
+    padding: 10px;
+}
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #FF6C00;
+}

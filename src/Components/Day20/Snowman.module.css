@@ -1,0 +1,110 @@
+.content {
+    background-color: white;
+    padding: 30px;
+    border: 5px dotted #B9E0FF;
+}
+
+.snowmanContent {
+    display: flex;
+    align-items: center;
+}
+
+.snowman{
+    margin-right: 40px;
+}
+
+.head {
+    background-color: whitesmoke;
+    width: 120px;
+    height: 120px;
+    border-radius: 90px;
+    position: relative;
+    left: 37px;
+    top: 17px;
+}
+
+.body {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.leftEye {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    left: 30px;
+    top: 24px;
+}
+
+.rightEye {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+}
+
+.nose {
+    border: 10px solid transparent;
+    position: absolute;
+    top: 53px;
+    left: 50px;
+}
+
+.mouth {
+    background-color: rgb(250, 248, 117);
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    left: 85px;
+    top: 40px;
+}
+
+.button1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    left: 85px;
+    top: 80px;
+
+}
+
+.button2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    left: 85px;
+    bottom: 60px;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #B9E0FF;
+}
+
+.colors {
+    margin-left: 40px;
+}
+
+.color {
+    margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}

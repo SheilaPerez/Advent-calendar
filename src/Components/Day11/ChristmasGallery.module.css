@@ -1,8 +1,14 @@
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;}
+    border: 5px dotted #A0204C;
+    background-color: white;
+    padding: 30px;
+}
 
 .contentCarrussel {
     width: 400px;
+}
+
+.title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #A0204C;
 }
