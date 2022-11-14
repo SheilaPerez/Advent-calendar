@@ -2,6 +2,9 @@
     background-color: white;
     border: 5px dotted #A149FA;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -18,6 +21,7 @@
     background-color:#c18af7;
     padding: 10px;
     border-radius: 15px;
+    margin-right: 10px;
 }
 
 .lenguagesEmptyContent {

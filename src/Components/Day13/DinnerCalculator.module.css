@@ -23,6 +23,8 @@
 .answer {
     font-weight: bold;
     text-decoration-line: underline;
+    font-size: 40px;
+    color: rgb(239, 108, 108)
 }
 
 .button {

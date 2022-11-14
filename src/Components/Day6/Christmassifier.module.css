@@ -1,6 +1,6 @@
 .clickedContent {
     background-color: rgb(255, 107, 107);
-    width: 500px;
+    width: auto;
     height: 200px;
     border: 9px dotted rgb(85, 248, 85);
     background-image: url('../../../public/arbol.png');
